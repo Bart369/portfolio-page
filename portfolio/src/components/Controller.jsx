@@ -15,16 +15,22 @@ class Controller extends React.Component{
         super(props)
         this.state = {
             loadPage: props.loadPage,
-            pageButtons: 'aboutMe',
+            pageButtons: 'aboutme',
             count: 0,
         }
         this.renderPageButtons = this.renderPageButtons.bind(this)
         // this.aboutMeButtons = this.aboutMeButtons.bind(this)
         // this.portfolioButtons = this.portfolioButtons.bind(this)
         // this.contactButtons = this.contactButtons.bind(this)
-        this.next = this.next.bind(this)
-        this.previous = this.previous.bind(this)
+        // this.next = this.next.bind(this)
+        // this.previous = this.previous.bind(this)
         // this.buttonLoader = this.buttonLoader.bind(this)
+        this.aboutMeNext = this.aboutMeNext.bind(this)
+        this.aboutMePrev = this.aboutMePrev.bind(this)
+        this.portfolioNext = this.portfolioNext.bind(this)
+        this.portfolioPrev = this.portfolioPrev.bind(this)
+        this.contactNext = this.contactNext.bind(this)
+        this.contactPrev = this.contactPrev.bind(this)
     }
 
     componentDidMount(){
@@ -36,32 +42,33 @@ class Controller extends React.Component{
     renderPageButtons(){
         switch(this.state.pageButtons){
             case 'portfolio':
-                return <PortfolioButtons />
+                return <PortfolioButtons next={this.portfolioNext} previous={this.portfolioPrev} />
                 break
             case 'contact':
-                return <ContactButtons />
+                return <ContactButtons next={this.contactNext} previous={this.contactPrev} />
                 break
             default:
-                return <AboutMeButtons next={this.next} previous ={this.previous} />
+                return <AboutMeButtons next={this.aboutMeNext} previous={this.aboutMePrev} />
                 break
         }
     }
-    next() {
-        // this.setState({
-        //     count: this.state.count + 1
-        // })
-        // console.log(this.state.count)
-        this.slider.slickNext()
-        // this.buttonLoader()
-    }
-    previous() {
-        // this.setState({
-        //     count: this.state.count - 1
-        // })
-        // console.log(this.state.count)
-        this.slider.slickPrev()
-        // this.buttonLoader()
-    }
+
+    // next() {
+    //     // this.setState({
+    //     //     count: this.state.count + 1
+    //     // })
+    //     // console.log(this.state.count)
+    //     this.slider.slickNext()
+    //     // this.buttonLoader()
+    // }
+    // previous() {
+    //     // this.setState({
+    //     //     count: this.state.count - 1
+    //     // })
+    //     // console.log(this.state.count)
+    //     this.slider.slickPrev()
+    //     // this.buttonLoader()
+    // }
 
     // buttonLoader(){
 
@@ -81,23 +88,47 @@ class Controller extends React.Component{
     //     }
     // }
 
-    // aboutMeButtons(){
-    //     this.setState({
-    //         pageButtons: 'aboutMe'
-    //     })
-    // }
+    aboutMeNext(){
+        this.setState({
+            pageButtons: 'portfolio'
+        })
+        this.slider.slickNext()
+    }
 
-    // portfolioButtons(){
-    //     this.setState({
-    //         pageButtons: 'portfolio'
-    //     })
-    // }
+    aboutMePrev() {
+        this.setState({
+            pageButtons: 'contact'
+        })
+        this.slider.slickPrev()
+    }
 
-    // contactButtons(){
-    //     this.setState({
-    //         pageButtons: 'contact'
-    //     })
-    // }
+    portfolioNext() {
+        this.setState({
+            pageButtons: 'contact'
+        })
+        this.slider.slickNext()
+    }
+
+    portfolioPrev() {
+        this.setState({
+            pageButtons: 'aboutme'
+        })
+        this.slider.slickPrev()
+    }
+
+    contactNext() {
+        this.setState({
+            pageButtons: 'aboutme'
+        })
+        this.slider.slickNext()
+    }
+
+    contactPrev() {
+        this.setState({
+            pageButtons: 'portfolio'
+        })
+        this.slider.slickPrev()
+    }
 
     render() {
         const settings = {
@@ -121,11 +152,11 @@ class Controller extends React.Component{
                         <Contact />
                     </div>
                 </Slider>
-                {/* {this.renderPageButtons()} */}
-                <div style={{ textAlign: 'center' }}>
+                {this.renderPageButtons()}
+                {/* <div style={{ textAlign: 'center' }}>
                     <button className='button' onClick={this.previous}>Previous</button>
                     <button className='button' onClick={this.next}>Next</button>
-                </div>
+                </div> */}
             </div>
         )
     }
