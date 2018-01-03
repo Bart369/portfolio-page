@@ -1,8 +1,14 @@
 /************ General **************/
 
-.main{
-  /* display: flex; */
+body{
+  background-color: #b30000
 }
+
+.main{
+
+}
+
+
 
 
 
@@ -32,6 +38,7 @@ nav li{
   justify-content: center;
   align-items: center;
   height: 80vh;
+  border: solid black
 }
 
 .about_me{
@@ -79,9 +86,4 @@ nav li{
   
 
   
-}
-
-
-h1{
-  /* font-size: 100px; */
 }

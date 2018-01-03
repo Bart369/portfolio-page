@@ -11,10 +11,10 @@ class App extends Component {
       <Router>
         <div className="App">
           {/* <Nav /> */}
-          {/* <Controller /> */}
-          <Route path='/' render={props => (<Controller loadPage='1' />)} />
-          <Route path='/portfolio' render={props => (<Controller loadPage='2' />)} />
-          <Route path='/contact' render={props => (<Controller loadPage='3' />)} />
+          <Controller />
+          {/* <Route path='/' render={props => (<Controller loadPage='0' />)} />
+          <Route path='/portfolio' render={props => (<Controller loadPage='1' />)} />
+          <Route path='/contact' render={props => (<Controller loadPage='2' />)} /> */}
         </div>
       </Router>
     );

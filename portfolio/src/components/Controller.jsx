@@ -53,41 +53,6 @@ class Controller extends React.Component{
         }
     }
 
-    // next() {
-    //     // this.setState({
-    //     //     count: this.state.count + 1
-    //     // })
-    //     // console.log(this.state.count)
-    //     this.slider.slickNext()
-    //     // this.buttonLoader()
-    // }
-    // previous() {
-    //     // this.setState({
-    //     //     count: this.state.count - 1
-    //     // })
-    //     // console.log(this.state.count)
-    //     this.slider.slickPrev()
-    //     // this.buttonLoader()
-    // }
-
-    // buttonLoader(){
-
-    //     if (this.state.count === 0) {
-    //         this.setState({
-    //             pageButtons: 'aboutMe'
-    //         })
-    //     }
-    //     else if (this.state.count === 1) {
-    //         this.setState({
-    //             pageButtons: 'portfolio'
-    //         })
-    //     } else {
-    //         this.setState({
-    //             pageButtons: 'contact'
-    //         })
-    //     }
-    // }
-
     aboutMeNext(){
         this.setState({
             pageButtons: 'portfolio'
@@ -132,31 +97,34 @@ class Controller extends React.Component{
 
     render() {
         const settings = {
-            dots: false,
+            // dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
+            // initialSlide: this.state.loadPage, 
+
             fade: true,
+            arrows:true,
+            afterChange: function (currentSlide) {      
+                console.log(currentSlide);
+            }
+            // swipeToSlide: true
         };
         return(
             <div className = 'main'>
                 <Slider ref={c => this.slider = c} {...settings}>
-                    <div key={1}>
+                    <div key={0}>
                         <AboutMe />
                     </div>
-                    <div key={2}>
+                    <div key={1}>
                         <Portfolio />
                     </div>
-                    <div key={3}>
+                    <div key={2}>
                         <Contact />
                     </div>
                 </Slider>
                 {this.renderPageButtons()}
-                {/* <div style={{ textAlign: 'center' }}>
-                    <button className='button' onClick={this.previous}>Previous</button>
-                    <button className='button' onClick={this.next}>Next</button>
-                </div> */}
             </div>
         )
     }
