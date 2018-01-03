@@ -2,9 +2,9 @@ import React from 'react'
 
 const ContactButtons = (props) => {
     return (
-        <div>
-            <button className='button' onClick={props.previous('portfolio')}>Portfolio</button>
-            <button className='button' onClick={props.next('aboutme')}>About Me</button>
+        <div style={{ textAlign: 'center' }}>
+            <button className='button' onClick={props.previous}>Portfolio</button>
+            <button className='button' onClick={props.next}>About Me</button>
         </div>
     )
 }
