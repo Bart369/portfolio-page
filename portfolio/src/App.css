@@ -1,0 +1,87 @@
+/************ General **************/
+
+.main{
+  /* display: flex; */
+}
+
+
+
+/************ Nav **************/
+
+.nav_links{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  margin-right: 8vw;
+  list-style: none;
+}
+
+nav li{
+  margin: 10px;
+  font-size: 20px
+}
+
+/******** AboutMe ***********/
+
+.about_me_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.about_me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 40vw;
+  min-width: 300px;
+}
+
+.about_me h1{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 100px;
+  border: solid;
+  min-width: 150px;
+}
+
+.about_me p{
+  border: solid;
+}
+
+
+/******** Portfolio ***********/
+
+.portfolio_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+.portfolio_items{
+  margin: 5px;
+  list-style-type: none;
+  border: solid
+  
+}
+
+.portfolio_items img{
+  width: 40vw;
+  /* min-width: 400px; */
+  height: 40vh;
+  
+
+  
+}
+
+
+h1{
+  /* font-size: 100px; */
+}

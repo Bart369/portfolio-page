@@ -1,0 +1,95 @@
+/********** General **********/
+
+body{
+  display: flex;
+}
+
+a{
+  text-decoration: none; 
+  cursor:pointer; 
+}
+
+/* a:visited{
+  color: #ccebff
+} */
+
+a:active{
+  color: #003d66;
+  background-color: #ccebff
+}
+
+
+/********** Nav Section **********/
+
+.nav_section{
+  width: 8vw;
+  height: 100vh;
+  background-color: #003d66;
+  color: #ccebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_li{
+  margin: 8px;
+  font-size: 20px;
+  width: 10vw;
+  text-align: center;
+}
+
+.nav_li:hover{
+  color: #003d66;
+  background-color: #ccebff;
+  /*border: solid;*/
+  /* text-shadow: 4px 4px 4px black; */
+}
+
+
+/********** Main Section **********/
+
+.main {
+  display: flex;
+  background-color: #ccebff;
+  width: 100vw;
+}
+
+/********** Index **********/
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.welcome_header{
+  text-align: left;
+  font-size: 100px;
+}
+
+/********** Portfolio **********/
+
+.portfolio{
+  display: flex;
+  align-items: center;
+
+}
+
+.portfolio_ul{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.portfolio_li img{
+  width: 40vw;
+  margin: 10px;
+}
+
+.portfolio_li img li:nth-child(2n) {
+    flex-basis: 50%;
+}
