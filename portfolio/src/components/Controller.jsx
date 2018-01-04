@@ -16,7 +16,6 @@ class Controller extends React.Component{
         this.state = {
             loadPage: props.loadPage,
             pageButtons: 'aboutme',
-            count: 0,
         }
         this.renderPageButtons = this.renderPageButtons.bind(this)
         // this.aboutMeButtons = this.aboutMeButtons.bind(this)
@@ -69,14 +68,14 @@ class Controller extends React.Component{
 
     portfolioNext() {
         this.setState({
-            pageButtons: 'contact'
+            pageButtons: 'contact',
         })
         this.slider.slickNext()
     }
 
     portfolioPrev() {
         this.setState({
-            pageButtons: 'aboutme'
+            pageButtons: 'aboutme',
         })
         this.slider.slickPrev()
     }
@@ -104,14 +103,14 @@ class Controller extends React.Component{
             slidesToScroll: 1,
             // initialSlide: this.state.loadPage, 
             // fade: true,
-            // arrows:true,
+            arrows:false,
             afterChange: function (currentSlide) {      
                 console.log(currentSlide);
             }
             // swipeToSlide: true
         };
         return(
-            <div className = 'main'>
+            <div>
                 {this.renderPageButtons()}
                 <Slider ref={c => this.slider = c} {...settings}>
                     <div key={0}>

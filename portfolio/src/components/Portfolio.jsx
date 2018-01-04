@@ -1,8 +1,8 @@
 import React from 'react'
 
 class Portfolio extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             hoverOff: true,
             hoverOn: null,
@@ -10,43 +10,111 @@ class Portfolio extends React.Component{
 
     }
 
+
     renderList(){
         switch(this.state.hoverOn){
             case 'one':
                 return (
-                    <ul className='portfolio_list'>
-                        <a href='http://sailor-seal-22603.bitballoon.com/'>
-                            <li className='portfolio_items' onMouseLeave={this.mouseOffOne.bind(this)} >
+                    <ul className='portfolio_list' >
+                        <li className='portfolio_items' onMouseLeave={this.mouseOffOne.bind(this)} >
+                            <a href='http://sailor-seal-22603.bitballoon.com/'>
                                 <img src='img/crunch2.jpg' />
-                            </li>
-                        </a>
-                        <a href='https://www.mmo-champion.com/content/'>
-                            <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
                                 <img src='img/ShowBot.png' />
-                            </li>
-                        </a>
-                        <li className='portfolio_items'><img src='img/ShowBot.png' /></li>
-                        <li className='portfolio_items'><img src='img/ShowBot.png' /></li>
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
                     </ul>
                 )
             break
             case 'two':
                 return (
                     <ul className='portfolio_list'>
-                        <a href='http://sailor-seal-22603.bitballoon.com/'>
-                            <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
+                            <a href='http://sailor-seal-22603.bitballoon.com/'>
                                 <img src='img/Space Shooter.png' />
-                            </li>
-                        </a>
-                        <a href='https://www.mmo-champion.com/content/'>
-                            <li className='portfolio_items' onMouseLeave={this.mouseOffTwo.bind(this)}>
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseLeave={this.mouseOffTwo.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
                                 <img src='img/crunch2.jpg' />
-                            </li>
-                        </a>
-                        <li className='portfolio_items'><img src='img/ShowBot.png' /></li>
-                        <li className='portfolio_items'><img src='img/ShowBot.png' /></li>
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
                     </ul>
-
+                )
+            break
+            case 'three':
+                return (
+                    <ul className='portfolio_list'>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
+                            <a href='http://sailor-seal-22603.bitballoon.com/'>
+                                <img src='img/Space Shooter.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseLeave={this.mouseOffThree.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/crunch2.jpg' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                    </ul>
+                )
+            break
+            case 'four':
+                return (
+                    <ul className='portfolio_list'>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
+                            <a href='http://sailor-seal-22603.bitballoon.com/'>
+                                <img src='img/Space Shooter.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseLeave={this.mouseOffFour.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/crunch2.jpg' />
+                            </a>
+                        </li>
+                    </ul>
                 )
             break
         }
@@ -61,7 +129,7 @@ class Portfolio extends React.Component{
 
     mouseOffOne() {
         this.setState({
-            hoverOn: null,
+            // hoverOn: null,      
             hoverOff: true,
         })
     }
@@ -75,7 +143,7 @@ class Portfolio extends React.Component{
 
     mouseOffTwo() {
         this.setState({
-            hoverOn: null,
+            // hoverOn: null,      
             hoverOff: true,
         })
     }
@@ -88,8 +156,8 @@ class Portfolio extends React.Component{
     }
 
     mouseOffThree() {
-        this.setState({
-            hoverOn: null,
+        this.setState({      
+            // hoverOn: null,            
             hoverOff: true,
         })
     }
@@ -102,8 +170,8 @@ class Portfolio extends React.Component{
     }
 
     mouseOffFour() {
-        this.setState({
-            hoverOn: null,
+        this.setState({  
+            // hoverOn: null,          
             hoverOff: true,
         })
     }
@@ -119,18 +187,26 @@ class Portfolio extends React.Component{
 
                 :
                     <ul className='portfolio_list'>
-                        <a href='http://sailor-seal-22603.bitballoon.com/'>
-                            <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
+                            <a href='http://sailor-seal-22603.bitballoon.com/'>
                                 <img src='img/Space Shooter.png' />
-                            </li>
-                        </a>
-                        <a href='https://www.mmo-champion.com/content/'>
-                            <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)} >
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)} >
+                            <a href='https://www.mmo-champion.com/content/'>
                                 <img src='img/ShowBot.png' />
-                            </li>
-                        </a>
-                        <li className='portfolio_items'><img src='img/ShowBot.png' /></li>
-                        <li className='portfolio_items'><img src='img/ShowBot.png' /></li>
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>
+                            <a href='https://www.mmo-champion.com/content/'>
+                                <img src='img/ShowBot.png' />
+                            </a>
+                        </li>
                     </ul>
                 }   
             </div>
