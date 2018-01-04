@@ -103,9 +103,8 @@ class Controller extends React.Component{
             slidesToShow: 1,
             slidesToScroll: 1,
             // initialSlide: this.state.loadPage, 
-
-            fade: true,
-            arrows:true,
+            // fade: true,
+            // arrows:true,
             afterChange: function (currentSlide) {      
                 console.log(currentSlide);
             }
@@ -113,6 +112,7 @@ class Controller extends React.Component{
         };
         return(
             <div className = 'main'>
+                {this.renderPageButtons()}
                 <Slider ref={c => this.slider = c} {...settings}>
                     <div key={0}>
                         <AboutMe />
@@ -124,7 +124,7 @@ class Controller extends React.Component{
                         <Contact />
                     </div>
                 </Slider>
-                {this.renderPageButtons()}
+                
             </div>
         )
     }
