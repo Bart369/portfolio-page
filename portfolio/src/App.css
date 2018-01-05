@@ -86,4 +86,85 @@ nav li{
   height: 40vh;
 }
 
+.highlight_one{
+  background-image: url('img/Space Shooter.png');
+  background-image: contain;
+  width: 50vw;
+  min-width: 400px;
+  height: 50vh;
+  -webkit-box-shadow: 0px 6px 9px black;
+  -moz-box-shadow: 0px 6px 9px black;
+  box-shadow: 0px 6px 9px black;
+}
+
+.highlight_two{
+  background-image: url('img/ShowBot.png');
+  background-image: cover;
+  /* padding-left: 15vw; */
+  width: 50vw;
+  min-width: 400px;
+  height: 50vh;
+  -webkit-box-shadow: 0px 6px 9px black;
+  -moz-box-shadow: 0px 6px 9px black;
+  box-shadow: 0px 6px 9px black;
+}
+
+.highlight_three{
+  background-image: url('img/ShowBot.png');
+  background-image: cover;
+  /* padding-left: 15vw; */
+  width: 50vw;
+  min-width: 400px;
+  height: 50vh;
+  -webkit-box-shadow: 0px 6px 9px black;
+  -moz-box-shadow: 0px 6px 9px black;
+  box-shadow: 0px 6px 9px black;
+}
+
+.minimize_one{
+  margin-top: 21vh;
+  width: 30vw;
+  min-width: 400px;
+  height: 30vh;
+
+}
+
+.minimize_one img{
+  width: 30vw;
+  min-width: 400px;
+  height: 30vh;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.minimize_two{
+  /* margin-top: 21vh; */
+  width: 30vw;
+  min-width: 400px;
+  height: 30vh;
+
+}
+
+.minimize_two img{
+  width: 30vw;
+  min-width: 400px;
+  height: 30vh;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.minimize_three{
+  margin-left: 21vh;
+  width: 30vw;
+  min-width: 400px;
+  height: 30vh;
+}
+
+.minimize_three img{
+  width: 30vw;
+  min-width: 400px;
+  height: 30vh;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
 
