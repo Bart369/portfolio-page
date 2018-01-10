@@ -16,16 +16,20 @@ class Portfolio extends React.Component{
             case 'one':
                 return (
                     <ul className='portfolio_list' >
-                        <li className='portfolio_items highlight_one' onMouseLeave={this.mouseOffOne.bind(this)} >
-                            <a href='http://sailor-seal-22603.bitballoon.com/'><p>This is Space Shooter</p></a>
+                        <li className='portfolio_items highlight_one' onClick={this.resetHover.bind(this)} onMouseLeave={this.mouseOffOne.bind(this)} >                
+                            <a href='http://sailor-seal-22603.bitballoon.com/'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut praesentium ipsa minima eligendi corrupti a deleniti numquam voluptatibus, explicabo, necessitatibus, dolorum earum incidunt dolore? Maiores debitis laborum cumque obcaecati.</p></a>                            
+                            <a href='http://sailor-seal-22603.bitballoon.com/'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut praesentium ipsa minima eligendi corrupti a deleniti numquam voluptatibus, explicabo, necessitatibus, dolorum earum incidunt dolore? Maiores debitis laborum cumque obcaecati.</p></a>                            
+                            <a href='http://sailor-seal-22603.bitballoon.com/'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut praesentium ipsa minima eligendi corrupti a deleniti numquam voluptatibus, explicabo, necessitatibus, dolorum earum incidunt dolore? Maiores debitis laborum cumque obcaecati.</p></a>                            
+                            <a href='http://sailor-seal-22603.bitballoon.com/'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut praesentium ipsa minima eligendi corrupti a deleniti numquam voluptatibus, explicabo, necessitatibus, dolorum earum incidunt dolore? Maiores debitis laborum cumque obcaecati.</p></a>                            
+                            <a href='http://sailor-seal-22603.bitballoon.com/'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut praesentium ipsa minima eligendi corrupti a deleniti numquam voluptatibus, explicabo, necessitatibus, dolorum earum incidunt dolore? Maiores debitis laborum cumque obcaecati.</p></a>                            
                         </li>
-                        <li className='portfolio_items minimize_one' onMouseEnter={this.mouseOverTwo.bind(this)}>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>
                             <img src='img/ShowBot.png' />
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverThree.bind(this)}>
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>
                             <img src='img/ShowBot.png' />                        
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverFour.bind(this)}>                        
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>                        
                             <img src='img/ShowBot.png' />                            
                         </li>
                     </ul>
@@ -34,16 +38,16 @@ class Portfolio extends React.Component{
             case 'two':
                 return (
                     <ul className='portfolio_list'>
-                        <li className='portfolio_items minimize_one' onMouseEnter={this.mouseOverOne.bind(this)} >
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >
                             <img src='img/Space Shooter.png'/>                    
                         </li>
-                        <li className='portfolio_items highlight_two' onMouseLeave={this.mouseOffTwo.bind(this)}>
+                        <li className='portfolio_items highlight_one' onClick={this.resetHover.bind(this)} onMouseLeave={this.mouseOffTwo.bind(this)}>
                             <a href='https://www.mmo-champion.com/content/'><h1>This is ShowBot</h1></a>
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverThree.bind(this)}>                            
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>                            
                             <img src='img/ShowBot.png' />                        
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverFour.bind(this)}>                        
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>                        
                             <img src='img/ShowBot.png' />
                         </li>
                     </ul>
@@ -52,18 +56,18 @@ class Portfolio extends React.Component{
             case 'three':
                 return (
                     <ul className='portfolio_list'>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverOne.bind(this)} >                    
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverOne.bind(this)} >                    
                             <img src='img/Space Shooter.png' />
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverTwo.bind(this)}>                    
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>                    
                             <img src='img/ShowBot.png' />
                         </li>
-                        <li className='portfolio_items highlight_three' onMouseLeave={this.mouseOffThree.bind(this)}>
+                        <li className='portfolio_items highlight_one' onClick={this.resetHover.bind(this)} onMouseLeave={this.mouseOffThree.bind(this)}>
                             <a href='https://www.mmo-champion.com/content/'>
-                                <img src='img/crunch2.jpg' />
+                                <h1>This is project 3</h1>
                             </a>
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverFour.bind(this)}>                            
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverFour.bind(this)}>                            
                             <img src='img/ShowBot.png' />                        
                         </li>
                     </ul>
@@ -72,24 +76,30 @@ class Portfolio extends React.Component{
             case 'four':
                 return (
                     <ul className='portfolio_list'>
-                        <li className='portfolio_items minimize_two'  onMouseEnter={this.mouseOverOne.bind(this)} >                            
+                        <li className='portfolio_items'  onMouseEnter={this.mouseOverOne.bind(this)} >                            
                             <img src='img/Space Shooter.png' />                            
                         </li>
-                        <li className='portfolio_items minimize_two' onMouseEnter={this.mouseOverTwo.bind(this)}>                        
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverTwo.bind(this)}>                        
                             <img src='img/ShowBot.png' />                        
                         </li>
-                        <li className='portfolio_items minimize_three' onMouseEnter={this.mouseOverThree.bind(this)}>                        
+                        <li className='portfolio_items' onMouseEnter={this.mouseOverThree.bind(this)}>                        
                             <img src='img/ShowBot.png' />                            
                         </li>
-                        <li className='portfolio_items highlight_three' onMouseLeave={this.mouseOffFour.bind(this)}>
+                        <li className='portfolio_items highlight_one' onClick={this.resetHover.bind(this)} onMouseLeave={this.mouseOffFour.bind(this)}>
                             <a href='https://www.mmo-champion.com/content/'>
-                                <img src='img/crunch2.jpg' />
+                                <h1>This is project 4</h1>
                             </a>
                         </li>
                     </ul>
                 )
             break
         }
+    }
+
+    resetHover() {
+        this.setState({
+            hoverOn: null
+        })
     }
 
     mouseOverOne(){

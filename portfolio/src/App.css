@@ -1,10 +1,69 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /************ General **************/
 
 body{
-  background-color: #b30000
+  background-color: #660022
 }
 
+.current_Button{
+  background-color: green;
+  border-radius: 5px;
+}
 
+.button{
+  background-color: black;
+  color: white;
+  font-size: 5vh;
+  border: none
+}
 
 
 
@@ -35,7 +94,7 @@ nav li{
   justify-content: center;
   align-items: center;
   height: 80vh;
-  border: solid black
+  /* border: solid black */
 }
 
 .about_me{
@@ -44,20 +103,35 @@ nav li{
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: 40vw;
+  width: 60vw;
   min-width: 300px;
+  
 }
 
 .about_me h1{
   text-align: center;
   font-family: 'Chewy', cursive;
-  font-size: 100px;
-  border: solid;
+  font-size: 10vh;
+  /* border: solid; */
   min-width: 150px;
+  color: #248f8f;
+  text-shadow: 2px 2px #98e6e6;
+  margin-bottom: 1vh
+}
+
+.about_me h2{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 5vh;
+  /* border: solid; */
+  /* max-width: 500px; */
+  color: #248f8f;
+  text-shadow: 1px 1px #98e6e6;
 }
 
 .about_me p{
   border: solid;
+  color: #00cc00;
 }
 
 
@@ -82,89 +156,21 @@ nav li{
 
 .portfolio_items img{
   width: 40vw;
-  min-width: 400px;
+  min-width: 300px;
   height: 40vh;
 }
 
 .highlight_one{
-  background-image: url('img/Space Shooter.png');
-  background-image: contain;
-  width: 50vw;
-  min-width: 400px;
-  height: 50vh;
+  width: 40vw;
+  min-width: 300px;
+  height: 40vh;
   -webkit-box-shadow: 0px 6px 9px black;
   -moz-box-shadow: 0px 6px 9px black;
   box-shadow: 0px 6px 9px black;
+  overflow: scroll;
+  /* margin-left: 1vw; */
 }
 
-.highlight_two{
-  background-image: url('img/ShowBot.png');
-  background-image: cover;
-  /* padding-left: 15vw; */
-  width: 50vw;
-  min-width: 400px;
-  height: 50vh;
-  -webkit-box-shadow: 0px 6px 9px black;
-  -moz-box-shadow: 0px 6px 9px black;
-  box-shadow: 0px 6px 9px black;
-}
 
-.highlight_three{
-  background-image: url('img/ShowBot.png');
-  background-image: cover;
-  /* padding-left: 15vw; */
-  width: 50vw;
-  min-width: 400px;
-  height: 50vh;
-  -webkit-box-shadow: 0px 6px 9px black;
-  -moz-box-shadow: 0px 6px 9px black;
-  box-shadow: 0px 6px 9px black;
-}
 
-.minimize_one{
-  margin-top: 21vh;
-  width: 30vw;
-  min-width: 400px;
-  height: 30vh;
-
-}
-
-.minimize_one img{
-  width: 30vw;
-  min-width: 400px;
-  height: 30vh;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.minimize_two{
-  /* margin-top: 21vh; */
-  width: 30vw;
-  min-width: 400px;
-  height: 30vh;
-
-}
-
-.minimize_two img{
-  width: 30vw;
-  min-width: 400px;
-  height: 30vh;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.minimize_three{
-  margin-left: 21vh;
-  width: 30vw;
-  min-width: 400px;
-  height: 30vh;
-}
-
-.minimize_three img{
-  width: 30vw;
-  min-width: 400px;
-  height: 30vh;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
 

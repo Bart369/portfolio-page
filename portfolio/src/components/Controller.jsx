@@ -96,14 +96,14 @@ class Controller extends React.Component{
 
     render() {
         const settings = {
-            // dots: true,
+            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             // initialSlide: this.state.loadPage, 
             // fade: true,
-            arrows:false,
+            arrows: true,
             afterChange: function (currentSlide) {      
                 console.log(currentSlide);
             }
