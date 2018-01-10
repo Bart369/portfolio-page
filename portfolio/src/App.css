@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,165 +12,252 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/************ General **************/
+/*********** general ***********/
 
-body{
-  background-color: #660022
-}
-
-.current_Button{
-  background-color: green;
-  border-radius: 5px;
-}
-
-.button{
-  background-color: black;
-  color: white;
-  font-size: 5vh;
-  border: none
+p, h1,h2, h3{
+  font-family: 'Roboto', sans-serif;
 }
 
 
-
-
-/************ Nav **************/
-
-/* .nav_links{
-  display: flex;
-  justify-content: flex-end;
+a{
+  text-decoration: none;
 }
 
-nav{
+.page_container{
+  display: flex
+}
+
+.main{
+  width: 100vw;
+}
+
+p{
+  font-size: 2vh
+}
+
+b{
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 4vh;
+  font-weight: bold
+}
+
+.splitter{
   display: flex;
   justify-content: center;
-  margin-right: 8vw;
-  list-style: none;
+  text-align: center;
+  background-color: #80002a;
+  padding-top: 3vh
+  /* border-top: solid black;
+  border-bottom: solid black;
+  margin-left: 8vw; */
 }
 
-nav li{
-  margin: 10px;
-  font-size: 20px
+.splitter_content{
+  display:flex;
+  justify-content: center;
+  color: white;
+  margin-left: 8vw;
+  padding: 5px;
+
+}
+
+.fa-arrow-down{
+  margin: 8px;
+}
+
+/************* header **************/
+
+
+
+/* .b{
+  color: #00b3b3
+}
+
+.p{
+  color: #80002a
 } */
 
-/******** AboutMe ***********/
+/************ contact **************/
+
+
+.contact{
+  position: fixed;
+  margin-top: 5vh;
+}
+
+.contact li{
+  margin: 15px;
+  margin-left: 2vw;
+  font-size: 5vh;
+}
+
+.fa-linkedin-square{
+  color: black
+}
+
+.fa-github-square{
+  color: black
+}
+
+.fa-envelope-square{
+  color: black
+}
+
+.fa-file-text-o{
+  color: black
+}
+
+.fa-linkedin-square:hover{
+  color: white
+}
+
+.fa-github-square:hover{
+  color: white
+}
+
+.fa-envelope-square:hover{
+  color: white
+}
+
+.fa-file-text-o:hover{
+  color: white
+}
+
+/************* about me **************/
+
+h1{
+  font-size: 6vh;
+  font-weight: bold;
+  
+}
+
+.header{
+  height: 6vh;
+}
 
 .about_me_container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
+  background-color: #b3003b;
+  /* background-attachment: fixed; */
+  width: 100vw;
+  height: 50vh;
+  padding-top: 5vh;
+  border-bottom: solid black 1vh;
+  
+}
+
+.about_me_content{
+  width: 50vw;
+  margin-right: 8vw;
+}
+
+.about_span{
+  color: #80002a;
+  font-weight: bold
+}
+
+.full{
+  color: black;
+  font-weight: bold
+}
+
+.slider{
+  color: white;
+  line-height: 5vh
+}
+
+.about_me_description{
+  background-color: #d9d9d9;
+  width: 60vw;
+  padding: 2vw;
+  border-radius: 15px;
   /* border: solid black */
 }
 
-.about_me{
+.my_highlights{
+  color: black
+}
+
+
+/************ portfolio ************/
+
+.portfolio_container{
+  width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 60vw;
+  background-color: #80002a;
+}
+
+.portfolio_content{
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: 8vw;
+}
+
+.portfolio_item{
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  margin: 2vw;
+  padding: 2vw;
+  /* border: solid black */
+}
+
+.portfolio_item img{
+  width: 30vw;
   min-width: 300px;
-  
-}
-
-.about_me h1{
-  text-align: center;
-  font-family: 'Chewy', cursive;
-  font-size: 10vh;
-  /* border: solid; */
-  min-width: 150px;
-  color: #248f8f;
-  text-shadow: 2px 2px #98e6e6;
-  margin-bottom: 1vh
-}
-
-.about_me h2{
-  text-align: center;
-  font-family: 'Chewy', cursive;
-  font-size: 5vh;
-  /* border: solid; */
-  /* max-width: 500px; */
-  color: #248f8f;
-  text-shadow: 1px 1px #98e6e6;
-}
-
-.about_me p{
-  border: solid;
-  color: #00cc00;
-}
-
-
-/******** Portfolio ***********/
-
-
-
-.portfolio_list{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -41px;
-  justify-content: center;
-}
-
-.portfolio_items{
+  height: 30vh;
   margin: 5px;
-  list-style-type: none;
-  border: 10px solid #bfbfbf;
-  border-radius: 5px
-  
 }
 
-.portfolio_items img{
-  width: 40vw;
-  min-width: 300px;
-  height: 40vh;
+.item_description{
+  margin: 5px;
+  width: 30vw;
 }
 
-.highlight_one{
-  width: 40vw;
-  min-width: 300px;
-  height: 40vh;
-  -webkit-box-shadow: 0px 6px 9px black;
-  -moz-box-shadow: 0px 6px 9px black;
-  box-shadow: 0px 6px 9px black;
-  overflow: scroll;
-  /* margin-left: 1vw; */
+.item_description b{
+  font-size: 2vh;
+  font-weight: bold;
+  color: #b3003b
 }
-
-
-
-
