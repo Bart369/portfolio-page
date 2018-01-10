@@ -1,87 +1,263 @@
-/************ General **************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-.main{
-  /* display: flex; */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-
-
-/************ Nav **************/
-
-.nav_links{
-  display: flex;
-  justify-content: flex-end;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
-
-nav{
-  display: flex;
-  justify-content: center;
-  margin-right: 8vw;
+body {
+  line-height: 1;
+}
+ol, ul {
   list-style: none;
 }
-
-nav li{
-  margin: 10px;
-  font-size: 20px
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/******** AboutMe ***********/
+/*********** general ***********/
+
+p, h1,h2, h3{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.page_container{
+  display: flex
+}
+
+.main{
+  width: 100vw;
+}
+
+p{
+  font-size: 2vh
+}
+
+b{
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 4vh;
+  font-weight: bold
+}
+
+.splitter{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #80002a;
+  padding-top: 3vh
+  /* border-top: solid black;
+  border-bottom: solid black;
+  margin-left: 8vw; */
+}
+
+.splitter_content{
+  display:flex;
+  justify-content: center;
+  color: white;
+  margin-left: 8vw;
+  padding: 5px;
+
+}
+
+.fa-arrow-down{
+  margin: 8px;
+}
+
+/************* header **************/
+
+
+
+/* .b{
+  color: #00b3b3
+}
+
+.p{
+  color: #80002a
+} */
+
+/************ contact **************/
+
+
+.contact{
+  position: fixed;
+  margin-top: 5vh;
+}
+
+.contact li{
+  margin: 15px;
+  margin-left: 2vw;
+  font-size: 5vh;
+}
+
+.fa-linkedin-square{
+  color: black
+}
+
+.fa-github-square{
+  color: black
+}
+
+.fa-envelope-square{
+  color: black
+}
+
+.fa-file-text-o{
+  color: black
+}
+
+.fa-linkedin-square:hover{
+  color: white
+}
+
+.fa-github-square:hover{
+  color: white
+}
+
+.fa-envelope-square:hover{
+  color: white
+}
+
+.fa-file-text-o:hover{
+  color: white
+}
+
+/************* about me **************/
+
+h1{
+  font-size: 6vh;
+  font-weight: bold;
+  
+}
+
+.header{
+  height: 6vh;
+}
 
 .about_me_container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
+  background-color: #b3003b;
+  /* background-attachment: fixed; */
+  width: 100vw;
+  height: 50vh;
+  padding-top: 5vh;
+  border-bottom: solid black 1vh;
+  
 }
 
-.about_me{
+.about_me_content{
+  width: 50vw;
+  margin-right: 8vw;
+}
+
+.about_span{
+  color: #80002a;
+  font-weight: bold
+}
+
+.full{
+  color: black;
+  font-weight: bold
+}
+
+.slider{
+  color: white;
+  line-height: 5vh
+}
+
+.about_me_description{
+  background-color: #d9d9d9;
+  width: 60vw;
+  padding: 2vw;
+  border-radius: 15px;
+  /* border: solid black */
+}
+
+.my_highlights{
+  color: black
+}
+
+
+/************ portfolio ************/
+
+.portfolio_container{
+  width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 40vw;
-  min-width: 300px;
+  background-color: #80002a;
 }
 
-.about_me h1{
-  text-align: center;
-  font-family: 'Chewy', cursive;
-  font-size: 100px;
-  border: solid;
-  min-width: 150px;
+.portfolio_content{
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: 8vw;
 }
 
-.about_me p{
-  border: solid;
-}
-
-
-/******** Portfolio ***********/
-
-.portfolio_list{
+.portfolio_item{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center
+  justify-content: center;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  margin: 2vw;
+  padding: 2vw;
+  /* border: solid black */
 }
 
-.portfolio_items{
+.portfolio_item img{
+  width: 30vw;
+  min-width: 300px;
+  height: 30vh;
   margin: 5px;
-  list-style-type: none;
-  border: solid
-  
 }
 
-.portfolio_items img{
-  width: 40vw;
-  /* min-width: 400px; */
-  height: 40vh;
-  
-
-  
+.item_description{
+  margin: 5px;
+  width: 30vw;
 }
 
-
-h1{
-  /* font-size: 100px; */
+.item_description b{
+  font-size: 2vh;
+  font-weight: bold;
+  color: #b3003b
 }
