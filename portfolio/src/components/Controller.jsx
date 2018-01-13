@@ -132,60 +132,67 @@ class Controller extends React.Component{
                                 <div className='header'>
                                     <h1>Bartin Peguero</h1>
                                 </div>
-                                <br />
+                                {/* <br /> */}
                                 <h2>
-                                    <span className='full'>Full-Stack Web Developer</span>
+                                    <span className='full'>Full-Stack Developer</span>
                                 </h2>
-                                <br />
-                                <Slider ref={c => this.slider = c} {...settings}>
-                                    <div key={0}>
-                                        <h2>
-                                            <span className='full slider'>Accounting & Customer Service Background</span>
-                                        </h2>
-                                    </div>
-                                    <div key={1}>
-                                        <h2>
-                                            <span className='full slider'>Tenacious Work Ethic</span>
-                                        </h2>
-                                    </div>
-                                    <div key={2}>
-                                        <h2>
-                                            <span className='full slider'>Team First Mentality</span>
-                                        </h2>
-                                    </div>
-                                    <div key={3}>
-                                        <h2>
-                                            <span className='full slider'>Creative Problem Solver</span>
-                                        </h2>
-                                    </div>
-                                    <div key={4}>
-                                        <h2>
-                                            <span className='full slider'>Marvel Movie Junkie</span>
-                                        </h2>
-                                    </div>
-                                    <div key={5}>
-                                        <h2>
-                                            <span className='full slider'>Shine Under Pressure</span>
-                                        </h2>
-                                    </div>
-                                    <div key={6}>
-                                        <h2>
-                                            <span className='full slider'>Kobe In the 4th Qtr</span>
-                                        </h2>
-                                    </div>
-                                    <div key={7}>
-                                        <h2>
-                                            <span className='full slider'>Always Working, Always Improving</span>
-                                        </h2>
-                                    </div>
-                                </Slider>
+                                {/* <br /> */}
+                                <div className='slider_container'>
+                                    <Slider ref={c => this.slider = c} {...settings}>
+                                        <div key={0}>
+                                            <h2>
+                                                <span className='full slider'>Accounting Degree</span>
+                                            </h2>
+                                        </div>
+                                        <div key={1}>
+                                            <h2>
+                                                <span className='full slider'>Tenacious Work Ethic</span>
+                                            </h2>
+                                        </div>
+                                        <div key={0}>
+                                            <h2>
+                                                <span className='full slider'>Customers Love Me</span>
+                                            </h2>
+                                        </div>
+                                        <div key={2}>
+                                            <h2>
+                                                <span className='full slider'>Team First Mentality</span>
+                                            </h2>
+                                        </div>
+                                        <div key={3}>
+                                            <h2>
+                                                <span className='full slider'>Problem Solver</span>
+                                            </h2>
+                                        </div>
+                                        <div key={4}>
+                                            <h2>
+                                                <span className='full slider'>Marvel Movie Fanatic</span>
+                                            </h2>
+                                        </div>
+                                        <div key={5}>
+                                            <h2>
+                                                <span className='full slider'>Shine Under Pressure</span>
+                                            </h2>
+                                        </div>
+                                        <div key={7}>
+                                            <h2>
+                                                <span className='full slider'>Always Working...</span>
+                                            </h2>
+                                        </div>
+                                        <div key={7}>
+                                            <h2>
+                                                <span className='full slider'>Always Improving</span>
+                                            </h2>
+                                        </div>
+                                    </Slider>
+                                </div>
                                  <br />
                             </div>
                             <br />
                             <div className='about_me_description'>
                                 <b><h3>More <span className='about_span'>about me</span>...</h3></b><br />
                                 <p>
-                                    I have a passion for tech, video games and creating fun and user-friendly apps. I'm always improving my skills to make
+                                    I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills to make
                                     the best apps I can, and would love to join a team that is equally driven. When I'm not coding, I'm most likely eating
                                     chipotle with my girlfriend or walking my super hyper Boston Terrier. If you're interested in collaborating on a project
                                     or just want to contact me, checkout the icons to the left.

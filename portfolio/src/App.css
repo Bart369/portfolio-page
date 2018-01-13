@@ -67,7 +67,14 @@ a{
 }
 
 p{
-  font-size: 2vh
+  font-size: calc(12px + 1.5vw);
+}
+
+
+@media only screen and (min-width: 600px) {
+    p{
+      font-size: 20px;
+    }
 }
 
 b{
@@ -95,7 +102,7 @@ h2{
   display:flex;
   justify-content: center;
   color: white;
-  margin-left: 8vw;
+  /* margin-left: 8vw; */
   padding: 5px;
 
 }
@@ -121,12 +128,11 @@ h2{
 
 .contact{
   position: fixed;
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
 
 .contact li{
-  margin: 15px;
-  margin-left: 2vw;
+  margin: 3vh 3vw 3vh 3vw;
   font-size: 5vh;
 }
 
@@ -171,7 +177,9 @@ h1{
 }
 
 .header{
-  height: 6vh;
+  margin-top: -1px;
+  height: 5vh;
+  margin-bottom: 2vh;
 }
 
 .about_me_container{
@@ -180,16 +188,18 @@ h1{
   background-color: #b3003b;
   /* background-attachment: fixed; */
   width: 100vw;
-  height: 50vh;
-  padding-top: 5vh;
+  height: 80vh;
+  padding-top: 4vh;
   border-bottom: solid black 1vh;
   
 }
 
 .about_me_content{
-  width: 50vw;
-  margin-right: 8vw;
+  width: 80vw;
+  margin-left: 6vw;
 }
+
+
 
 .about_span{
   color: #80002a;
@@ -198,21 +208,42 @@ h1{
 
 .full{
   color: black;
-  font-weight: bold
+  font-weight: bold;
+}
+
+.slider_container{
+  margin-top: 1vh;
 }
 
 .slider{
   color: white;
-  line-height: 5vh
+  line-height: 5vh;
+  
 }
 
 .about_me_description{
   background-color: #d9d9d9;
-  width: 60vw;
-  padding: 2vw;
+  width: 70vw;
+  padding: 6vw;
   border-radius: 15px;
+  text-align: justify;
+  text-justify: distribute
   /* border: solid black */
 }
+
+@media only screen and (min-width: 375px) {
+    .about_me_description{
+      width: 60vw;
+      margin-left: 1vw;
+    }
+}
+
+/* @media only screen and (min-width: 600px) {
+    .about_me_description{
+      width: 50vw;
+      margin-left: 1vw;
+    }
+} */
 
 .my_highlights{
   color: black
