@@ -106,7 +106,7 @@ class Controller extends React.Component{
             fade: true,
             arrows: false,
             afterChange: function (currentSlide) {      
-                console.log(currentSlide);
+                // console.log(currentSlide);
             }
             // swipeToSlide: true
         };
@@ -149,7 +149,7 @@ class Controller extends React.Component{
                                                 <span className='full slider'>Tenacious Work Ethic</span>
                                             </h2>
                                         </div>
-                                        <div key={0}>
+                                        <div key={8}>
                                             <h2>
                                                 <span className='full slider'>Customers Love Me</span>
                                             </h2>
@@ -179,7 +179,7 @@ class Controller extends React.Component{
                                                 <span className='full slider'>Always Working...</span>
                                             </h2>
                                         </div>
-                                        <div key={7}>
+                                        <div key={9}>
                                             <h2>
                                                 <span className='full slider'>Always Improving</span>
                                             </h2>
@@ -190,12 +190,13 @@ class Controller extends React.Component{
                             </div>
                             <br />
                             <div className='about_me_description'>
-                                <b><h3>More <span className='about_span'>about me</span>...</h3></b><br />
+                                <b><h2>More <span className='about_span'>about me</span>...</h2></b><br />
                                 <p>
                                     I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills to make
                                     the best apps I can, and would love to join a team that is equally driven. When I'm not coding, I'm most likely eating
-                                    chipotle with my girlfriend or walking my super hyper Boston Terrier. If you're interested in collaborating on a project
-                                    or just want to contact me, checkout the icons to the left.
+                                    chipotle with my girlfriend or walking my super hyper Boston Terrier.<br/>
+                                    <br/>
+                                    If you're interested in collaborating on a project or just want to contact me, checkout the icons to the left.
                                  </p>
                             </div>
                         </div>
@@ -211,72 +212,75 @@ class Controller extends React.Component{
 
                     {/* <!-- PORTFOLIO SECTION
                   --> */}
-    <div className='portfolio_container'>
+                    <div className='portfolio_container'>
                         <div className='portfolio_content'>
                             <div className='portfolio_item'>
+                                <h2>Space Shooter <a href='https://github.com/Bart369/Space-Shooter' title='Github'><i className="fa fa-github-alt" aria-hidden="true"></i></a></h2><br/>
+                                <p>- <b>HTML / CSS</b> <br />
+                                    - <b>Javascript</b> <br />
+                                    - <b>DOM manipulation</b> <br /> 
+                                    - <b>Collision Detection</b></p>
+                                <br />
                                 <img src='img/Space Shooter.png'/>
-                                    <div className='item_description'>
-                                        <h2>Space Shooter</h2>
+                                <div className='item_description'>                     
+                                    <p>
+                                        Space Shooter is a game similar to old school games such as Space Invaders and Galaga where the
+                                        player controls a space ship and has to avoid being hit by other flying projectiles. The player moves
+                                        the ship with the arrow keys and can shoot the enemy ships by pressing the space bar. The objective
+                                        is to collect the gold coins that randomly appear while trying to kill as many enemies as possible to get
+                                        a high score.<br />
                                         <br />
-                                        <p>
-                                            Space Shooter is a game similar to old school games such as Space Invaders and Galaga where the
-                                            player controls a space ship and has to avoid being hit by other flying projectiles. The player moves
-                                            the ship with the arrow keys and can shoot the enemy ships by pressing the space bar. The objective
-                                            is to collect the gold coins that randomly appear while trying to kill as many enemies as possible to get
-                                            a high score.<br />
-                                            <br />
-                                            Space Shooter was made with <b>HTML</b>, <b>CSS</b> and <b>Javascript</b> for <b>DOM manipulation</b> and <b>Collision Detection</b>.<br />
-                                            <br />
-                                            The first thing I would like to improve is the actual code since I repeated myself too much.
-                                            I also would like to let each player enter their initials and save their score to a leaderboard,
-                                            which would be updated and displayed after the player wins or loses the game. There is also
-                                            a bug where the player sometimes takes damage when shooting, and this is what made me decide
-                                            to create the items the player can collect by flying to them. There's a heart the player can get that will refill
-                                            the player's shield. In other words <b>I took the bug, and turned it into a feature!</b>
-                                        </p>
-                                    </div>
-                            </div>
-
-                                <div className='portfolio_item'>
-                                    <img src='img/ShowBot.png'/>
-                                        <div className='item_description'>
-                                            <h2>ShowBot</h2>
-                                            <br />
-                                            <p>
-                                                ShowBot allows users to search for tv shows, and get information such as the plot, the number of seasons and episodes and more.
-                                                As the user browses the search results, they have the option of adding any of those shows to their favorites list or just see more
-                                                information. Each user must register a username so each user will have their own favorite list of shows. <br />
-                                                    <br />
-                                                ShowBot was made with <b>EJS</b> for the front-end, and <b>Node.js/Express.js</b> for the backend and authentication.The tv
-                                                show data comes from www.themoviedb.org's <b>API</b>.<br />
-                                                <br />
-                                                A feature I would like to add is to notify the user when a new episode of the their favorite show is released. This also
-                                                means I would need to add views that display episodes. I would also like to expand this app to
-                                                also deliver information for Movies.
-                                            </p>
-                                        </div>
+                                        The first thing I would like to improve is the actual code since I repeated myself too much.
+                                        I also would like to let each player enter their initials and save their score to a leaderboard,
+                                        which would be updated and displayed after the player wins or loses the game. There is also
+                                        a bug where the player sometimes takes damage when shooting, and this is what made me decide
+                                        to create the items the player can collect by flying to them. There's a heart the player can get that will refill
+                                        the player's shield. In other words, I turned the bug into a feature!
+                                    </p>
                                 </div>
-                                    <div className='portfolio_item'>
-                                        <img src='img/timetovote.png'/>
-                                            <div className='item_description'>
-                                                <h2>Time To Vote</h2>
-                                                <br />
-                                                <p>
-                                                    I decided to make Time To Vote because I felt that as a US Citizen, I was (well I'm still working on this) not as
-                                                    informed as I should be about our government. This app may not be the answer to that issue but it's my way of trying to help.
-                                                    Time To Vote allows the user to look up any US zipcode to see who are the elected officials in that area and any relevant
-                                                    information about them. The user can also see the upcoming primary elections in 2018 and pickwhich states they would like
-                                                    to receive a notification for to remind them it's time to vote! I am currently working on this feature.<br />
-                                                    <br />
-                                                    Time To Vote has a <b>React</b> front end, <b>Node.js/Express.js</b> backend, Google's Civic <b>API</b> for the elected officials data and made my own API
-                                                     to get the election dates.<br />
-                                                    <br />
-                                                    I would like to allow the user to share the election dates and even the elected officials data on facebook. I want to be able to show
-                                                    information on the candidates running but this data is not yet available. I think this app would work
-                                                    best on mobile so I need to do some tweeking to improve its functionality on those platforms.
-                                                </p>
-                                            </div>
-                                    </div>
+                            </div>
+                            <div className='portfolio_item '>
+                                <h2>ShowBot <a href='https://github.com/Bart369/Project-2' title='Github'><i className="fa fa-github-alt" aria-hidden="true"></i></a></h2><br />
+                                <p>- <b>Embedded Javascript</b><br/>
+                                    - <b>Node.js / Express.js</b><br />
+                                    - <b>Authentication</b><br />
+                                    - <b>RESTFUL API</b> </p>
+                                <br />
+                                <img src='img/ShowBot.png'/>
+                                <div className='item_description'>                                            
+                                    <p>
+                                        ShowBot allows users to search for tv shows, and get information such as the plot, the number of seasons and episodes and more.
+                                        As the user browses the search results, they have the option of adding any of those shows to their favorites list or just see more
+                                        information. Each user must register a username so each user will have their own favorite list of shows. <br />
+                                        <br />
+                                        A feature I would like to add is to notify the user when a new episode of the their favorite show is released. This also
+                                        means I would need to add views that display episodes. I would also like to expand this app to
+                                        also deliver information for Movies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='portfolio_item'>
+                                <h2>Time To Vote <a href='https://github.com/Bart369/Time-To-Vote' title='Github'><i className="fa fa-github-alt" aria-hidden="true"></i></a></h2><br/>
+                                <p>- <b>React.js</b><br />
+                                    - <b>Node.js / Express.js</b><br />
+                                    - <b>Authentication</b><br />
+                                    - <b>RESTFUL API</b> </p>
+                                <br />
+                                <img src='img/timetovote.png'/>
+                                <div className='item_description'>                                                
+                                    <p>
+                                        I decided to make Time To Vote because I felt that as a US Citizen, I was (well I'm still working on this) not as
+                                        informed as I should be about our government. This app may not be the answer to that issue but it's my way of trying to help.
+                                        Time To Vote allows the user to look up any US zipcode to see who are the elected officials in that area and any relevant
+                                        information about them. The user can also see the upcoming primary elections in 2018 and pickwhich states they would like
+                                        to receive a notification for to remind them it's time to vote! I am currently working on this feature.<br />
+                                        <br />
+                                        I would like to allow the user to share the election dates and even the elected officials data on facebook. I want to be able to show
+                                        information on the candidates running but this data is not yet available. I think this app would work
+                                        best on mobile so I need to do some tweeking to improve its functionality on those platforms.
+                                    </p>
+                                </div>
+                            </div>
                                         {/* <!-- <div className='portfolio_item'>
                                             <img src='img/numbers-01.jpg'>
                                                 <div className='item_description'>

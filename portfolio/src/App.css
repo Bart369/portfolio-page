@@ -78,8 +78,9 @@ p{
 }
 
 b{
-  font-size: 3vh;
-  font-weight: bold;
+  font-size: calc(9px + 1.5vh);;
+  /* font-weight: bold; */
+  color: #80002a
 }
 
 h2{
@@ -136,6 +137,13 @@ h2{
   font-size: 5vh;
 }
 
+@media only screen and (min-width: 600px) {
+    .contact li{
+      margin: 3vh 3vw 3vh 5vw;
+      font-size: 6vh;
+  }
+}
+
 .fa-linkedin-square{
   color: black
 }
@@ -186,12 +194,17 @@ h1{
   display: flex;
   justify-content: center;
   background-color: #b3003b;
-  /* background-attachment: fixed; */
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   padding-top: 4vh;
   border-bottom: solid black 1vh;
-  
+}
+
+/* TRying to fix iphone 4 about me */
+@media only screen and (min-height: 550px) {
+    .about_me_container{
+      height: 80vh;
+    }
 }
 
 .about_me_content{
@@ -226,24 +239,32 @@ h1{
   width: 70vw;
   padding: 6vw;
   border-radius: 15px;
-  text-align: justify;
-  text-justify: distribute
+  /* text-align: justify;
+  text-justify: distribute */
   /* border: solid black */
 }
 
+
 @media only screen and (min-width: 375px) {
     .about_me_description{
-      width: 60vw;
+      width: 65vw;
       margin-left: 1vw;
     }
 }
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .about_me_description{
-      width: 50vw;
+      width: 65vw;
+      padding: 5vw;
       margin-left: 1vw;
     }
-} */
+}
+
+@media only screen and (min-width: 1000px) {
+    .about_me_description {
+      width: 60vw;
+  }
+}
 
 .my_highlights{
   color: black
@@ -261,30 +282,75 @@ h1{
 
 .portfolio_content{
   margin-top: 5vh;
-  width: 70vw;
-  margin-left: 8vw;
+  margin-left: 6vw;
+  width: 75vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    .portfolio_content {
+      display: flex;
+      flex-wrap: wrap
+  }
 }
 
 .portfolio_item{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
   background-color: #d9d9d9;
   border-radius: 15px;
-  margin: 2vw;
-  padding: 2vw;
-  /* border: solid black */
+  margin-bottom: 2vh;
+  padding: 4vw;
+}
+
+.portfolio_item h2{
+  text-align: center
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .portfolio_item {
+    width: 30vw;
+    margin: 5px;
+    padding: 2vw;
+    /* padding-right: 3vw; */
+  }
 }
 
 .portfolio_item img{
-  width: 30vw;
-  min-width: 300px;
-  height: 30vh;
+  width: 65vw;
+  height: 23vh;
+  min-height: 100px;
   margin: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    .portfolio_item img{
+    height: 35vh;
+    min-height: 100px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+    .portfolio_item img{
+    width: 30vw;
+    height: 30vh;
+    /* min-height: 100px;  */
+    margin: 5px;
+  }
 }
 
 .item_description{
   margin: 5px;
-  width: 30vw;
+  width: 65vw;
+  font-size: 5vh
+}
+
+@media only screen and (min-width: 1000px) {
+    .item_description {
+    width: 30vw;
+  }
 }
 
 .item_description b{
