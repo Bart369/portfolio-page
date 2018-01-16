@@ -119,7 +119,7 @@ class Controller extends React.Component{
                         <li><a href='https://www.linkedin.com/in/bartinpeguero/' title='LinkedIn'><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                         <li><a href='https://github.com/Bart369' title='Github'><i className="fa fa-github-square" aria-hidden="true"></i></a></li>
                         <li><a href='mailto:BartinPeguero@gmail.com' title='E-Mail'><i className="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://drive.google.com/open?id=1EvwexIIwOfhqnt1ae_joyJ4YOe_vNsQP" title='Resume'><i className="fa fa-file-text-o" aria-hidden="true"></i></a></li>
+                        <li><a href="https://drive.google.com/open?id=1x-o52duFyucMqGKPccuq8Du5rL2RPiKQ" title='Resume'><i className="fa fa-file-text-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
 
@@ -151,7 +151,7 @@ class Controller extends React.Component{
                                         </div>
                                         <div key={8}>
                                             <h2>
-                                                <span className='full slider'>Customers Love Me</span>
+                                                <span className='full slider'>Customer Service Exp.</span>
                                             </h2>
                                         </div>
                                         <div key={2}>
@@ -196,7 +196,7 @@ class Controller extends React.Component{
                                     the best apps I can, and would love to join a team that is equally driven. When I'm not coding, I'm most likely eating
                                     chipotle with my girlfriend or walking my super hyper Boston Terrier.<br/>
                                     <br/>
-                                    If you're interested in collaborating on a project or just want to contact me, checkout the icons to the left.
+                                    If you're interested in collaborating on a project or just want to contact me, checkout the icons to the left. Thanks for checking out my work!
                                  </p>
                             </div>
                         </div>
@@ -230,12 +230,7 @@ class Controller extends React.Component{
                                         is to collect the gold coins that randomly appear while trying to kill as many enemies as possible to get
                                         a high score.<br />
                                         <br />
-                                        The first thing I would like to improve is the actual code since I repeated myself too much.
-                                        I also would like to let each player enter their initials and save their score to a leaderboard,
-                                        which would be updated and displayed after the player wins or loses the game. There is also
-                                        a bug where the player sometimes takes damage when shooting, and this is what made me decide
-                                        to create the items the player can collect by flying to them. There's a heart the player can get that will refill
-                                        the player's shield. In other words, I turned the bug into a feature!
+                                        <b><a href='http://spaceshooterbartinpeguero.bitballoon.com/'>Click here</a></b> to play Space Shooter! <br/> (*** sorry desktop only ***)
                                     </p>
                                 </div>
                             </div>
@@ -253,9 +248,7 @@ class Controller extends React.Component{
                                         As the user browses the search results, they have the option of adding any of those shows to their favorites list or just see more
                                         information. Each user must register a username so each user will have their own favorite list of shows. <br />
                                         <br />
-                                        A feature I would like to add is to notify the user when a new episode of the their favorite show is released. This also
-                                        means I would need to add views that display episodes. I would also like to expand this app to
-                                        also deliver information for Movies.
+                                        <b><a href='https://showbotapp.herokuapp.com/'>Click here</a></b> to search your favorite shows on ShowBot!
                                     </p>
                                 </div>
                             </div>
@@ -272,12 +265,10 @@ class Controller extends React.Component{
                                         I decided to make Time To Vote because I felt that as a US Citizen, I was (well I'm still working on this) not as
                                         informed as I should be about our government. This app may not be the answer to that issue but it's my way of trying to help.
                                         Time To Vote allows the user to look up any US zipcode to see who are the elected officials in that area and any relevant
-                                        information about them. The user can also see the upcoming primary elections in 2018 and pickwhich states they would like
+                                        information about them. The user can also see the upcoming primary elections in 2018 and pick which states they would like
                                         to receive a notification for to remind them it's time to vote! I am currently working on this feature.<br />
                                         <br />
-                                        I would like to allow the user to share the election dates and even the elected officials data on facebook. I want to be able to show
-                                        information on the candidates running but this data is not yet available. I think this app would work
-                                        best on mobile so I need to do some tweeking to improve its functionality on those platforms.
+                                        <b><a href='https://timetovoteapp.herokuapp.com/'>Click here</a></b> to look up elected officials near you!
                                     </p>
                                 </div>
                             </div>

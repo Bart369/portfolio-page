@@ -79,7 +79,6 @@ p{
 
 b{
   font-size: calc(9px + 1.5vh);;
-  /* font-weight: bold; */
   color: #80002a
 }
 
@@ -94,9 +93,6 @@ h2{
   text-align: center;
   background-color: #80002a;
   padding-top: 3vh
-  /* border-top: solid black;
-  border-bottom: solid black;
-  margin-left: 8vw; */
 }
 
 .splitter_content{
@@ -111,18 +107,6 @@ h2{
 .fa-arrow-down{
   margin: 8px;
 }
-
-/************* header **************/
-
-
-
-/* .b{
-  color: #00b3b3
-}
-
-.p{
-  color: #80002a
-} */
 
 /************ contact **************/
 
@@ -354,7 +338,7 @@ h1{
 }
 
 .item_description b{
-  font-size: 2vh;
+  font-size: 10px + 1.5vh;
   font-weight: bold;
   color: #b3003b
 }
