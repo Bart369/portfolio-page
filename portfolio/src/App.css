@@ -181,6 +181,7 @@ h1{
   width: 100vw;
   height: 100vh;
   padding-top: 4vh;
+  padding-bottom: 10vh;
   border-bottom: solid black 1vh;
 }
 
@@ -223,9 +224,6 @@ h1{
   width: 70vw;
   padding: 6vw;
   border-radius: 15px;
-  /* text-align: justify;
-  text-justify: distribute */
-  /* border: solid black */
 }
 
 
@@ -337,8 +335,27 @@ h1{
   }
 }
 
-.item_description b{
+.portfolio_item b{
   font-size: 10px + 1.5vh;
   font-weight: bold;
+  color: black
+  
+}
+
+.portfolio_item a{
   color: #b3003b
+}
+
+.portfolio_item a:hover{
+  color: white;
+  text-shadow: -1px 0 #80002a, 0 1px #80002a, 1px 0 #80002a, 0 -1px #80002a;
+}
+
+
+/********* Footer  *************/
+
+footer{
+  background-color: #80002a;
+  text-align: center;
+  padding: 2vw 0 1vw 0;
 }

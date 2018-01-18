@@ -169,19 +169,14 @@ class Controller extends React.Component{
                                                 <span className='full slider'>Marvel Movie Fanatic</span>
                                             </h2>
                                         </div>
-                                        <div key={5}>
-                                            <h2>
-                                                <span className='full slider'>Shine Under Pressure</span>
-                                            </h2>
-                                        </div>
                                         <div key={7}>
                                             <h2>
-                                                <span className='full slider'>Always Working...</span>
+                                                <span className='full slider'>Always Working</span>
                                             </h2>
                                         </div>
                                         <div key={9}>
                                             <h2>
-                                                <span className='full slider'>Always Improving</span>
+                                                <span className='full slider'>Always Learning</span>
                                             </h2>
                                         </div>
                                     </Slider>
@@ -192,16 +187,15 @@ class Controller extends React.Component{
                             <div className='about_me_description'>
                                 <b><h2>More <span className='about_span'>about me</span>...</h2></b><br />
                                 <p>
-                                    I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills to make
-                                    the best apps I can, and would love to join a team that is equally driven. When I'm not coding, I'm most likely eating
-                                    chipotle with my girlfriend or walking my super hyper Boston Terrier.<br/>
-                                    <br/>
+                                    I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills and learning
+                                    new ones to make the best apps possible, and would love to join a team that is equally driven. When I'm not coding, I'm most likely
+                                    watching movies, on my pull-up bar, eating Chipotle with my girlfriend or walking my crazy-super-hyper Boston Terrier.
+                                    <br /> <br />
                                     If you're interested in collaborating on a project or just want to contact me, checkout the icons to the left. Thanks for checking out my work!
                                  </p>
                             </div>
                         </div>
                     </div>
-
                     <div className='splitter'>
                         <div className='splitter_content'>
                             <i className="fa fa-arrow-down" aria-hidden="true"></i>
@@ -210,12 +204,13 @@ class Controller extends React.Component{
                         </div>
                     </div>
 
+
                     {/* <!-- PORTFOLIO SECTION
                   --> */}
                     <div className='portfolio_container'>
                         <div className='portfolio_content'>
                             <div className='portfolio_item'>
-                                <h2>Space Shooter <a href='https://github.com/Bart369/Space-Shooter' title='Github'><i className="fa fa-github-alt" aria-hidden="true"></i></a></h2><br/>
+                                <a href='https://github.com/Bart369/Space-Shooter' title='Github'><h2>Space Shooter <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br/>
                                 <p>- <b>HTML / CSS</b> <br />
                                     - <b>Javascript</b> <br />
                                     - <b>DOM manipulation</b> <br /> 
@@ -228,14 +223,15 @@ class Controller extends React.Component{
                                         player controls a space ship and has to avoid being hit by other flying projectiles. The player moves
                                         the ship with the arrow keys and can shoot the enemy ships by pressing the space bar. The objective
                                         is to collect the gold coins that randomly appear while trying to kill as many enemies as possible to get
-                                        a high score.<br />
+                                        a high score. There's currently a bug where the player's shield randomly depletes when shooting,
+                                        so I added collectible hearts that do the opposite and heal the player.<br />
                                         <br />
                                         <b><a href='http://spaceshooterbartinpeguero.bitballoon.com/'>Click here</a></b> to play Space Shooter! <br/> (*** sorry desktop only ***)
                                     </p>
                                 </div>
                             </div>
                             <div className='portfolio_item '>
-                                <h2>ShowBot <a href='https://github.com/Bart369/Project-2' title='Github'><i className="fa fa-github-alt" aria-hidden="true"></i></a></h2><br />
+                                <a href='https://github.com/Bart369/Project-2' title='Github'><h2>ShowBot <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br />
                                 <p>- <b>Embedded Javascript</b><br/>
                                     - <b>Node.js / Express.js</b><br />
                                     - <b>Authentication</b><br />
@@ -246,14 +242,14 @@ class Controller extends React.Component{
                                     <p>
                                         ShowBot allows users to search for tv shows, and get information such as the plot, the number of seasons and episodes and more.
                                         As the user browses the search results, they have the option of adding any of those shows to their favorites list or just see more
-                                        information. Each user must register a username so each user will have their own favorite list of shows. <br />
+                                        information. Each user must register under a unique username so that they will have their own favorites list. <br />
                                         <br />
                                         <b><a href='https://showbotapp.herokuapp.com/'>Click here</a></b> to search your favorite shows on ShowBot!
                                     </p>
                                 </div>
                             </div>
                             <div className='portfolio_item'>
-                                <h2>Time To Vote <a href='https://github.com/Bart369/Time-To-Vote' title='Github'><i className="fa fa-github-alt" aria-hidden="true"></i></a></h2><br/>
+                                <a href='https://github.com/Bart369/Time-To-Vote' title='Github'><h2>Time To Vote <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br/>
                                 <p>- <b>React.js</b><br />
                                     - <b>Node.js / Express.js</b><br />
                                     - <b>Authentication</b><br />
@@ -262,31 +258,19 @@ class Controller extends React.Component{
                                 <img src='img/timetovote.png'/>
                                 <div className='item_description'>                                                
                                     <p>
-                                        I decided to make Time To Vote because I felt that as a US Citizen, I was (well I'm still working on this) not as
-                                        informed as I should be about our government. This app may not be the answer to that issue but it's my way of trying to help.
-                                        Time To Vote allows the user to look up any US zipcode to see who are the elected officials in that area and any relevant
-                                        information about them. The user can also see the upcoming primary elections in 2018 and pick which states they would like
-                                        to receive a notification for to remind them it's time to vote! I am currently working on this feature.<br />
+                                        Time To Vote allows the user to look up any US zipcode to see the elected officials in that area and any relevant
+                                        information about them. The user can also see upcoming primary election dates in 2018 and soon I would like to allow 
+                                        users to share specific dates straight to social media. Authentication is currently disabled.<br />
                                         <br />
                                         <b><a href='https://timetovoteapp.herokuapp.com/'>Click here</a></b> to look up elected officials near you!
                                     </p>
                                 </div>
                             </div>
-                                        {/* <!-- <div className='portfolio_item'>
-                                            <img src='img/numbers-01.jpg'>
-                                                <div className='item_description'>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse minus quis reiciendis expedita nesciunt magni,
-              iusto nemo quod officia, voluptatibus quo exercitationem quam alias nostrum eos nulla dolorum quia.</p>
-                                                </div>
-        </div> --> */}
-      </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                
-                
-            
+                        </div>
+                    </div>
+                    <footer><p>&copy; 2018 Bartin Peguero All Rights Reserved</p></footer>
+                </div>
+            </div>   
         )
     }
     
