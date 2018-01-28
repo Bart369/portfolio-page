@@ -119,7 +119,7 @@ class Controller extends React.Component{
                         <li><a href='https://www.linkedin.com/in/bartinpeguero/' title='LinkedIn'><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                         <li><a href='https://github.com/Bart369' title='Github'><i className="fa fa-github-square" aria-hidden="true"></i></a></li>
                         <li><a href='mailto:BartinPeguero@gmail.com' title='E-Mail'><i className="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://drive.google.com/open?id=1x-o52duFyucMqGKPccuq8Du5rL2RPiKQ" title='Resume'><i className="fa fa-file-text-o" aria-hidden="true"></i></a></li>
+                        <li><a href="https://drive.google.com/open?id=146i4Ke7VvY4NwYzQG6Djx-j4B4rJHpmd" title='Resume'><i className="fa fa-file-text-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
 
