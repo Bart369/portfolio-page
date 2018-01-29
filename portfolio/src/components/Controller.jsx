@@ -128,6 +128,7 @@ class Controller extends React.Component{
                   --> */}
                     <div className='about_me_container'>
                         <div className='about_me_content'>
+                            <div className='headerHolder'>
                             <div className='my_highlights'>
                                 <div className='header'>
                                     <h1>Bartin Peguero</h1>
@@ -183,16 +184,21 @@ class Controller extends React.Component{
                                 </div>
                                  <br />
                             </div>
+                            </div>
                             <br />
-                            <div className='about_me_description'>
-                                <b><h2>More <span className='about_span'>about me</span>...</h2></b><br />
-                                <p>
-                                    I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills and learning
-                                    new ones to make the best apps possible, and would love to join a team that is equally driven. When I'm not coding, I'm most likely
-                                    watching movies, on my pull-up bar, eating Chipotle with my girlfriend or walking my crazy-super-hyper Boston Terrier.
-                                    <br /> <br />
-                                    If you're interested in collaborating on a project or just want to contact me, checkout the icons to the left. Thanks for checking out my work!
-                                 </p>
+                            <div className='aboutme_holder'>
+                                <div className='about_me_description'>
+                                    {/* <div className='aboutme_text'> */}
+                                    <b><h2>More <span className='about_span'>about me</span>...</h2></b><br />
+                                    <p>
+                                        I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills and learning
+                                        new ones to make the best apps possible, and would love to join a team that is equally driven. When I'm not coding, I'm most likely
+                                        watching movies, on my pull-up bar, eating Chipotle with my girlfriend or walking my crazy-super-hyper Boston Terrier.
+                                        <br /> <br />
+                                        If you're interested in collaborating on a project or just want to contact me, checkout the icons to the left. Thanks for checking out my work!
+                                    </p>
+                                    {/* </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
