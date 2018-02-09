@@ -133,9 +133,9 @@ class Controller extends React.Component{
                                 <div className='header'>
                                     <h1>Bartin Peguero</h1>
                                 </div>
-                                {/* <br /> */}
+                                
                                 <h2>
-                                    <span className='full'>Full-Stack Developer</span>
+                                    <span className='second_Header'>Full-Stack Developer</span>
                                 </h2>
                                 {/* <br /> */}
                                 <div className='slider_container'>
@@ -217,11 +217,8 @@ class Controller extends React.Component{
                         <div className='portfolio_content'>
                             <div className='portfolio_item'>
                                 <a href='https://github.com/Bart369/Space-Shooter' title='Github'><h2>Space Shooter <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br/>
-                                <p>- <b>HTML / CSS</b> <br />
-                                    - <b>Javascript</b> <br />
-                                    - <b>DOM manipulation</b> <br /> 
-                                    - <b>Collision Detection</b></p>
-                                <br />
+                                <p style={styles.pStyle}><b>Javascript / Collision Detection</b></p><br/>
+                                
                                 <img src='img/Space Shooter.png'/>
                                 <div className='item_description'>                     
                                     <p>
@@ -238,10 +235,7 @@ class Controller extends React.Component{
                             </div>
                             <div className='portfolio_item '>
                                 <a href='https://github.com/Bart369/Project-2' title='Github'><h2>ShowBot <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br />
-                                <p>- <b>Embedded Javascript</b><br/>
-                                    - <b>Node.js / Express.js</b><br />
-                                    - <b>Authentication</b><br />
-                                    - <b>RESTFUL API</b> </p>
+                                <p style={styles.pStyle}><b>EJS / Express.JS / Auth / API</b><br/></p>
                                 <br />
                                 <img src='img/ShowBot.png'/>
                                 <div className='item_description'>                                            
@@ -256,10 +250,7 @@ class Controller extends React.Component{
                             </div>
                             <div className='portfolio_item'>
                                 <a href='https://github.com/Bart369/Time-To-Vote' title='Github'><h2>Time To Vote <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br/>
-                                <p>- <b>React.js</b><br />
-                                    - <b>Node.js / Express.js</b><br />
-                                    - <b>Authentication</b><br />
-                                    - <b>RESTFUL API</b> </p>
+                                <p style={styles.pStyle}><b>React.JS / Express.JS / API</b><br /></p>
                                 <br />
                                 <img src='img/timetovote.png'/>
                                 <div className='item_description'>                                                
@@ -280,6 +271,12 @@ class Controller extends React.Component{
         )
     }
     
+}
+
+const styles = {
+    pStyle: {
+        textAlign: 'center'
+    }
 }
 
 export default Controller

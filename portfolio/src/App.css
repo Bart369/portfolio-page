@@ -67,23 +67,22 @@ a{
 }
 
 p{
-  font-size: calc(12px + 1.5vw);
+  font-size: 20px
 }
 
-
-@media only screen and (min-width: 600px) {
-    p{
-      font-size: 20px;
-    }
+@media only screen and (max-width: 900px) {
+  p {
+    font-size: 15px
+  }
 }
+
 
 b{
-  font-size: calc(9px + 1.5vh);;
   color: #80002a
 }
 
 h2{
-  font-size: 4vh;
+  font-size: 30px;
   font-weight: bold
 }
 
@@ -163,25 +162,24 @@ h2{
 /************* about me **************/
 
 h1{
-  font-size: 6vh;
+  font-size: 45px;
   font-weight: bold;
   
 }
 
 .header{
   margin-top: -1px;
-  height: 5vh;
-  margin-bottom: 2vh;
+  margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   h1 {
-  font-size: 5vh;
+  font-size: 40px;
   font-weight: bold;
   }
 
   h2  {
-  font-size: 3.3vh;
+  font-size: 25px;
   font-weight: bold;
 
   }
@@ -194,22 +192,20 @@ h1{
   width: 100vw;
   height: 100vh;
   padding-top: 4vh;
-  padding-bottom: 10vh;
   border-bottom: solid black 1vh;
 }
 
-/* Trying to fix iphone 4 about me */
-@media only screen and (min-height: 550px) {
-    .about_me_container{
-      height: 80vh;
-    }
+@media only screen and (max-height: 400px) {
+  .about_me_container{
+   height: 120vh;
+  }
 }
 
 .about_me_content{
   width: 80vw;
   margin-left: 6vw;
-}
 
+}
 
 
 .about_span{
@@ -228,7 +224,7 @@ h1{
 
 .slider{
   color: white;
-  line-height: 5vh;
+  line-height: 40px;
   
 }
 
@@ -278,9 +274,8 @@ h1{
 .aboutme_holder{
   display: flex;
   /* justify-content: center; */
-  height: 80%;
-  /* border: solid black; */
-  /* align-items: center; */
+  /* height: 80%; */
+  align-items: center;
 }
 
 
@@ -299,7 +294,7 @@ h1{
   width: 75vw;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
     .portfolio_content {
       display: flex;
       flex-wrap: wrap
@@ -321,7 +316,7 @@ h1{
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
     .portfolio_item {
     width: 30vw;
     margin: 5px;
@@ -337,7 +332,7 @@ h1{
   margin: 5px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1300px) {
     .portfolio_item img{
     height: 35vh;
     min-height: 100px;
@@ -345,7 +340,7 @@ h1{
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
     .portfolio_item img{
     width: 30vw;
     height: 30vh;
@@ -354,13 +349,23 @@ h1{
   }
 }
 
+/* working on ipad dimensions */
+@media only screen and (min-width: 600px) and (min-height: 600px)  {
+    .portfolio_item img{
+    /* width: 30vw; */
+    height: 35vh;
+    /* min-height: 100px;  */
+    margin: 5px;
+  }
+}
+
 .item_description{
   margin: 5px;
   width: 65vw;
-  font-size: 5vh
+  font-size: 20px
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
     .item_description {
     width: 30vw;
   }
