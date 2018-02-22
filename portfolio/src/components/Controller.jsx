@@ -129,7 +129,7 @@ class Controller extends React.Component{
                     <div className='about_me_container'>
                         <div className='about_me_content'>
                             <div className='headerHolder'>
-                            <div className='my_highlights'>
+                            
                                 <div className='header'>
                                     <h1>Bartin Peguero</h1>
                                 </div>
@@ -183,7 +183,7 @@ class Controller extends React.Component{
                                     </Slider>
                                 </div>
                                  <br />
-                            </div>
+                            
                             </div>
                             <br />
                             <div className='aboutme_holder'>

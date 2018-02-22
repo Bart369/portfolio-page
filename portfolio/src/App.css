@@ -172,7 +172,23 @@ h1{
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 359px) {
+  h1 {
+  font-size: 30px;
+  font-weight: bold;
+  }
+
+  h2  {
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .headerHolder {
+    margin-bottom: -15px;
+  }
+}
+
+@media only screen and (max-width: 410px) and (min-width: 359px) {
   h1 {
   font-size: 40px;
   font-weight: bold;
