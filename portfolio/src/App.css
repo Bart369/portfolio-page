@@ -70,8 +70,16 @@ p{
   font-size: 20px
 }
 
+  .portfolio_item b {
+    font-size: 20px
+  }
+
 @media only screen and (max-width: 900px) {
   p {
+    font-size: 15px
+  }
+
+  .portfolio_item b {
     font-size: 15px
   }
 }
@@ -123,7 +131,7 @@ h2{
 @media only screen and (min-width: 600px) {
     .contact li{
       margin: 3vh 3vw 3vh 5vw;
-      font-size: 6vh;
+      font-size: 50px;
   }
 }
 
@@ -186,6 +194,10 @@ h1{
   .headerHolder {
     margin-bottom: -15px;
   }
+
+  .about_me_container{
+   height: 140vh;
+  }
 }
 
 @media only screen and (max-width: 410px) and (min-width: 359px) {
@@ -210,17 +222,30 @@ h1{
   padding-top: 4vh;
   border-bottom: solid black 1vh;
 }
+ 
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 415px) {
   .about_me_container{
-   height: 120vh;
+    height: 140vh;
   }
+} 
+
+@media only screen and (max-height: 400px) and (max-width: 600px) {
+ .about_me_container{
+    height: 180vh;
+ }
 }
 
 .about_me_content{
-  width: 80vw;
-  margin-left: 6vw;
+  width: 85vw;
+  margin-left: 15vw;
+}
 
+@media only screen and (min-width: 1300px) {
+.about_me_content{
+  width: 70vw;
+  margin-left: -5vw;
+}
 }
 
 
@@ -271,21 +296,16 @@ h1{
     }
 }
 
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
     .about_me_description {
       width: 60vw;
   }
-}
+} */
 
 .my_highlights{
   color: black
 }
 
-.aboutme_text{
-  /* justify-content: center;
-  align-it */
-
-}
 
 .aboutme_holder{
   display: flex;
@@ -310,7 +330,7 @@ h1{
   width: 75vw;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1300px) {
     .portfolio_content {
       display: flex;
       flex-wrap: wrap
@@ -321,6 +341,7 @@ h1{
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
+  align-items: center;
   background-color: #d9d9d9;
   border-radius: 15px;
   margin-bottom: 2vh;
@@ -344,20 +365,28 @@ h1{
 .portfolio_item img{
   width: 65vw;
   height: 23vh;
-  min-height: 100px;
+  min-height: 150px;
   margin: 5px;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 500px) and (max-height: 600px)  {
     .portfolio_item img{
-    height: 35vh;
-    min-height: 100px;
+    width: 50vw;
+    min-height: 200px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-height: 1000px)  {
+  .portfolio_item img{
+    width: 50vw;
+    min-height: 300px;
     margin: 5px;
   }
 }
 
 @media only screen and (min-width: 1300px) {
-    .portfolio_item img{
+  .portfolio_item img{
     width: 30vw;
     height: 30vh;
     /* min-height: 100px;  */
@@ -365,21 +394,25 @@ h1{
   }
 }
 
-/* working on ipad dimensions */
-@media only screen and (min-width: 600px) and (min-height: 600px)  {
-    .portfolio_item img{
-    /* width: 30vw; */
-    height: 35vh;
-    /* min-height: 100px;  */
-    margin: 5px;
-  }
-}
 
 .item_description{
   margin: 5px;
   width: 65vw;
   font-size: 20px
 }
+
+@media only screen and (min-width: 500px) and (max-height: 600px)  {
+  .item_description {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-height: 1000px)  {
+  .item_description {
+    width: 50vw;
+  }
+}
+
 
 @media only screen and (min-width: 1300px) {
     .item_description {
@@ -388,10 +421,8 @@ h1{
 }
 
 .portfolio_item b{
-  font-size: 10px + 1.5vh;
   font-weight: bold;
-  color: black
-  
+  color: black 
 }
 
 .portfolio_item a{
