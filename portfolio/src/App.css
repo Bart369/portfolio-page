@@ -377,10 +377,11 @@ h1{
   }
 }
 
-@media only screen and (min-width: 500px) and (max-height: 1000px)  {
+@media only screen and (min-width: 550px) and (max-height: 1000px)  {
   .portfolio_item img{
     width: 50vw;
-    min-height: 300px;
+    min-height: 250px;
+    max-width: 450px;
     margin: 5px;
   }
 }
@@ -389,6 +390,8 @@ h1{
   .portfolio_item img{
     width: 30vw;
     height: 30vh;
+    max-width: 450px;
+    min-height: 150px;
     /* min-height: 100px;  */
     margin: 5px;
   }
@@ -401,9 +404,10 @@ h1{
   font-size: 20px
 }
 
-@media only screen and (min-width: 500px) and (max-height: 600px)  {
+@media only screen and (min-width: 550px) and (max-height: 1000px)  {
   .item_description {
     width: 50vw;
+    max-width: 450px;
   }
 }
 
