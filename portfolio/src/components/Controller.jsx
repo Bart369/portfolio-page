@@ -150,12 +150,17 @@ class Controller extends React.Component{
                                                 <span className='full slider'>Tenacious Work Ethic</span>
                                             </h2>
                                         </div>
+                                        <div key={2}>
+                                            <h2>
+                                                <span className='full slider'>Love Animals</span>
+                                            </h2>
+                                        </div>
                                         <div key={8}>
                                             <h2>
                                                 <span className='full slider'>Customer Service Exp.</span>
                                             </h2>
                                         </div>
-                                        <div key={2}>
+                                        <div key={12}>
                                             <h2>
                                                 <span className='full slider'>Team First Mentality</span>
                                             </h2>
@@ -189,7 +194,7 @@ class Controller extends React.Component{
                             <div className='aboutme_holder'>
                                 <div className='about_me_description'>
                                     {/* <div className='aboutme_text'> */}
-                                    <b><h2>More <span className='about_span'>about me</span>...</h2></b><br />
+                                    <b><h2><span className='about_span'>More about me...</span></h2></b><br />
                                     <p>
                                         I have a passion for unique tech, video games and creating fun and clean looking apps. I'm always improving my skills and learning
                                         new ones to make the best apps possible, and would love to join a team that is equally driven. When I'm not coding, I'm most likely
@@ -215,26 +220,9 @@ class Controller extends React.Component{
                   --> */}
                     <div className='portfolio_container'>
                         <div className='portfolio_content'>
-                            <div className='portfolio_item'>
-                                <a href='https://github.com/Bart369/Space-Shooter' title='Github'><h2>Space Shooter <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br/>
-                                <p style={styles.pStyle}><b>Javascript / Collision Detection</b></p><br/>
-                                
-                                <img src='img/Space Shooter.png'/>
-                                <div className='item_description'>                     
-                                    <p>
-                                        Space Shooter is a game similar to old school games such as Space Invaders and Galaga where the
-                                        player controls a space ship and has to avoid being hit by other flying projectiles. The player moves
-                                        the ship with the arrow keys and can shoot the enemy ships by pressing the space bar. The objective
-                                        is to collect the gold coins that randomly appear while trying to kill as many enemies as possible to get
-                                        a high score. There's currently a bug where the player's shield randomly depletes when shooting,
-                                        so I added collectible hearts that do the opposite and heal the player.<br />
-                                        <br />
-                                        <b><a href='http://spaceshooterbartinpeguero.bitballoon.com/'>Click here</a></b> to play Space Shooter! <br/> (*** sorry desktop only ***)
-                                    </p>
-                                </div>
-                            </div>
+                            
                             <div className='portfolio_item '>
-                                <a href='https://github.com/Bart369/Project-2' title='Github'><h2>ShowBot <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br />
+                                <a href='https://showbotapp.herokuapp.com/' title='Github'><h2>ShowBot</h2></a><br />
                                 <p style={styles.pStyle}><b>EJS / Express.JS / Auth / API</b><br/></p>
                                 <br />
                                 <img src='img/ShowBot.png'/>
@@ -244,12 +232,14 @@ class Controller extends React.Component{
                                         As the user browses the search results, they have the option of adding any of those shows to their favorites list or just see more
                                         information. Each user must register under a unique username so that they will have their own favorites list. <br />
                                         <br />
-                                        <b><a href='https://showbotapp.herokuapp.com/'>Click here</a></b> to search your favorite shows on ShowBot!
+                                        <b><a href='https://showbotapp.herokuapp.com/'>Click here</a></b> to search your favorite shows on ShowBot!<br /> 
+                                        <br /> 
+                                        <b><a href='https://github.com/Bart369/Project-2'>Click here <i className="fa fa-github-alt" aria-hidden="true"></i></a></b> to see the code.<br />
                                     </p>
                                 </div>
                             </div>
                             <div className='portfolio_item'>
-                                <a href='https://github.com/Bart369/Time-To-Vote' title='Github'><h2>Time To Vote <i className="fa fa-github-alt" aria-hidden="true"></i></h2></a><br/>
+                                <a href='https://timetovoteapp.herokuapp.com/' title='Github'><h2>Time To Vote</h2></a><br/>
                                 <p style={styles.pStyle}><b>React.JS / Express.JS / API</b><br /></p>
                                 <br />
                                 <img src='img/timetovote.png'/>
@@ -259,7 +249,29 @@ class Controller extends React.Component{
                                         information about them. The user can also see upcoming primary election dates in 2018 and soon I would like to allow 
                                         users to share specific dates straight to social media. Authentication is currently disabled.<br />
                                         <br />
-                                        <b><a href='https://timetovoteapp.herokuapp.com/'>Click here</a></b> to look up elected officials near you!
+                                        <b><a href='https://timetovoteapp.herokuapp.com/'>Click here</a></b> to look up elected officials near you!<br />
+                                        <br />
+                                        <b><a href='https://github.com/Bart369/Time-To-Vote'>Click here <i className="fa fa-github-alt" aria-hidden="true"></i></a></b> to see the code.<br />
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='portfolio_item'>
+                                <a href='http://spaceshooterbartinpeguero.bitballoon.com/' title='Github'><h2>Space Shooter</h2></a><br />
+                                <p style={styles.pStyle}><b>Javascript / Collision Detection</b></p><br />
+
+                                <img src='img/Space Shooter.png' />
+                                <div className='item_description'>
+                                    <p>
+                                        Space Shooter is a game similar to old school games such as Space Invaders and Galaga where the
+                                        player controls a space ship and has to avoid being hit by other flying projectiles. The player moves
+                                        the ship with the arrow keys and can shoot the enemy ships by pressing the space bar. The objective
+                                        is to collect the gold coins that randomly appear while trying to kill as many enemies as possible to get
+                                        a high score. There's currently a bug where the player's shield randomly depletes when shooting,
+                                        so I added collectible hearts that do the opposite and heal the player.<br />
+                                        <br />
+                                        <b><a href='http://spaceshooterbartinpeguero.bitballoon.com/'>Click here</a></b> to play Space Shooter! <br /> (*** sorry desktop only ***)<br />
+                                        <br />
+                                        <b><a href='https://github.com/Bart369/Space-Shooter'>Click here <i className="fa fa-github-alt" aria-hidden="true"></i></a></b> to see the code.<br />
                                     </p>
                                 </div>
                             </div>

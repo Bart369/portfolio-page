@@ -220,7 +220,7 @@ h1{
   width: 100vw;
   height: 100vh;
   padding-top: 4vh;
-  border-bottom: solid black 1vh;
+  border-bottom: solid black 2px;
 }
  
 
@@ -256,7 +256,7 @@ h1{
 
 
 .about_span{
-  color: #80002a;
+  color: black;
   font-weight: bold
 }
 
